@@ -34,7 +34,7 @@ function parseTask(text) {
         // Format as YYYY-MM-DD
         const mm = String(month).padStart(2, '0');
         const dd = String(day).padStart(2, '0');
-        deadline = `${year}-${mm}-${dd}`;
+        deadline = `${dd}/${mm}/${year}`;
 
         // Remove the date portion from the title
         title = title.replace(dateRegex, '');
